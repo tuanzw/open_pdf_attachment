@@ -6,7 +6,7 @@ import fnmatch
 option_dict = {
     1: "CONTAINER LABEL ",
     2: "CONTENT LIST LABEL ",
-    3: "FISCHER SHIPPING LABEL ",
+    3: "SHIPPING LABEL ",
 }
 edi_message = "C:\\EDI_Messages\\"
 no_reply = "no.reply@ap.mail.com"
@@ -17,8 +17,8 @@ def select_option():
     option_message = (
         "Please select OPTION:\n"
         + "1.CONTAINER LABEL\n"
-        + "2.FISCHER CONTENT LIST LABEL\n"
-        + "3.FISCHER SHIPPING LABEL\n"
+        + "2.CONTENT LIST LABEL\n"
+        + "3.SHIPPING LABEL\n"
     )
     while True:
         user_selected = input(option_message)
